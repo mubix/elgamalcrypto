@@ -3,6 +3,11 @@ Simple Python Elgamal Encryption and Decryption Tool
 
 This script needs some work on figuring out how to encrypt faster as the power for c2 takes forever if you are into bigger numbers, but the decryption works great.
 
+## Helpful Resources:
+- Christof Paar's video on Elgamal - https://www.youtube.com/watch?v=tKNY1zhK3sQ
+- Christof Paar's book on Cryptography - https://www.amazon.com/Understanding-Cryptography-Textbook-Students-Practitioners/dp/3642041000/
+- ElGamal Encryption Playground - https://www.debjitbiswas.com/elgamal/
+
 ## Dependencies
 
 - `pip install sympy` - This is so the prime generator works quickly.
