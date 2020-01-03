@@ -12,16 +12,15 @@ def shared_secret(g,x,p):
   h = pow(g,x,p)
   return h
 
-def decrypt(x,c1,c2,p):
-  s = pow(c1,x,p)
-  dm = (c2 * inverse(s,p)) % p
-  return dm
-
 def encrypt(m,r,g,p,h):
   c1 = pow(g,r,p)
   c2 = (pow(h,r) * m) % p
   return c1,c2
 
+def decrypt(x,c1,c2,p):
+  s = pow(c1,x,p)
+  dm = (c2 * inverse(s,p)) % p
+  return dm
 
 if __name__ == "__main__":
   print("Warning: Anthing more than 3 characters could take a very long time to encrypt")
