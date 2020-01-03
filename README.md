@@ -5,7 +5,7 @@ This script needs some work on figuring out how to encrypt faster as the power f
 
 ## Dependencies
 
-- `pip install symmpy` - This is so the prime generator works quickly.
+- `pip install sympy` - This is so the prime generator works quickly.
 
 ## Example Run
 
