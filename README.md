@@ -10,7 +10,7 @@ This script needs some work on figuring out how to encrypt faster as the power f
 ## Example Run
 
 ```
-time python3 run2.py
+$ time python3 elgamal.py
 Warning: Anthing more than 3 characters could take a very long time to encrypt
 Enter message to encrypt: Bob
 Bob's MESSAGE         : Bob
