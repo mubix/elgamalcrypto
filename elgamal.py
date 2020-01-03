@@ -7,17 +7,6 @@ import sympy
 import random
 from binascii import hexlify, unhexlify
 
-# Prime Number (p)
-p = 7247
-# Generator (g)
-g = 138
-# Alice's Private Key (x)
-x = 2781
-# Bob's Private Key (r)
-r = 5660
-# The Encrypted Message (m)
-m = 3243
-
 def shared_secret(g,x,p):
   # Shared Secret (h)
   h = pow(g,x,p)
