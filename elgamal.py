@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# Created by Rob 'mubix' Fuller
 
 # Source of Info: https://www.debjitbiswas.com/elgamal/
 
