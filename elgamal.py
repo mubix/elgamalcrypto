@@ -15,7 +15,8 @@ def shared_secret(g,x,p):
 
 def encrypt(m,r,g,p,h):
   c1 = pow(g,r,p)
-  c2 = (pow(h,r) * m) % p
+  # Stolen from https://github.com/dlitz/pycrypto/blob/master/lib/Crypto/PublicKey/ElGamal.py
+  c2 = (m * pow(h, r, p) ) % p
   return c1,c2
 
 def decrypt(x,c1,c2,p):
@@ -24,7 +25,6 @@ def decrypt(x,c1,c2,p):
   return dm
 
 if __name__ == "__main__":
-  print("Warning: Anthing more than 3 characters could take a very long time to encrypt")
   input_message = input("Enter message to encrypt: ")
   inputbytes = str.encode(input_message)
   m = int(hexlify(inputbytes), 16)
