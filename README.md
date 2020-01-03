@@ -35,7 +35,7 @@ real	0m1.649s
 user	0m0.285s
 sys	0m0.016s
 ```
-
+![](elgamal_run.png)
 
 ## Example 3 Character Run
 
