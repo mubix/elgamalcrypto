@@ -12,7 +12,32 @@ This script needs some work on figuring out how to encrypt faster as the power f
 
 - `pip install sympy` - This is so the prime generator works quickly.
 
-## Example Run
+## Example 2 Character Run with Verification
+
+```
+$ time ./elgamal.py
+Warning: Anthing more than 3 characters could take a very long time to encrypt
+Enter message to encrypt: it
+Bob's MESSAGE         : it
+MESSAGE as an int (M) : 26996
+Prime number (P)      : 76441
+Generator (G)         : 24593
+Alice private key (X) : 26163
+Bob's private key (R) : 21332
+Shared secret (H)     : 36965
+Encrypted Message (C1): 64946
+Encrypted Message (C2): 59537
+Decrypted Integer (dm): 26996
+Decrypted Hex (x)     : 6974
+Decrypted Message     : b'it'
+
+real	0m1.649s
+user	0m0.285s
+sys	0m0.016s
+```
+
+
+## Example 3 Character Run
 
 ```
 $ time python3 elgamal.py
