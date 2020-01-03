@@ -20,13 +20,13 @@ Warning: Anthing more than 3 characters could take a very long time to encrypt
 Enter message to encrypt: it
 Bob's MESSAGE         : it
 MESSAGE as an int (M) : 26996
-Prime number (P)      : 76441
-Generator (G)         : 24593
-Alice private key (X) : 26163
-Bob's private key (R) : 21332
-Shared secret (H)     : 36965
-Encrypted Message (C1): 64946
-Encrypted Message (C2): 59537
+Prime number (P)      : 61253
+Generator (G)         : 23087
+Alice private key (X) : 16103
+Bob's private key (R) : 20490
+Shared secret (H)     : 36479
+Encrypted Message (C1): 2362
+Encrypted Message (C2): 6772
 Decrypted Integer (dm): 26996
 Decrypted Hex (x)     : 6974
 Decrypted Message     : b'it'
